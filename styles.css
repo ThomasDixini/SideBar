@@ -23,6 +23,10 @@
 
   /* HEADER ===============================================*/ 
 
+  
+      
+
+
   h1 {
     font-size: 1.5rem;
     font-weight: 500;
@@ -70,6 +74,38 @@
       outline: none;
 
       background-color: var(--light-green);
+  }
+  
+
+
+
+
+
+
+
+
+
+  /* RESPONSIVE ============================================ */ 
+
+  @media (max-width: 1440px){
+.menu{
+
+        width: 4rem;
+        height: 700px;
+        background-color: var(--green); 
+      }
+
+.icon {
+      width: 40px;
+      height: 40px;
+      margin: 0.8rem 1.5rem;
+    }
+
+button {
+        width: 4rem;
+        height: 60px;
+    }
+
   }
 
   
