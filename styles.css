@@ -17,4 +17,59 @@
     --text-color: #084236;
   }
 
+  body {
+      display: flex;
+  }
+
+  /* HEADER ===============================================*/ 
+
+  h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+
+    margin: 1rem;
+
+
+    color: var(--text-color);
+    text-shadow: 0 4px 4px rgba(0,0,0,0.25);
+  }
+
+  /* MENU ================================================== */
+
+  .menu{
+
+    width: 5rem;
+    height: 890px;
+    background-color: var(--green);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      
+  }
+
+  .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    width: 50px;
+    height: 50px;
+    margin: 0.8rem 1.5rem;
+      background-color: var(--light-grey);
+
+    border-radius: 0.25rem;
+  }
+
+  button {
+
+      width: 5rem;
+      height: 50px;
+
+      border: none;
+      outline: none;
+
+      background-color: var(--light-green);
+  }
+
   
