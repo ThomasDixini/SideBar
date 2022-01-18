@@ -42,6 +42,8 @@
 
   .menu{
 
+    transition: width 0.5s;
+
     width: 5rem;
     height: 890px;
     background-color: var(--green);
@@ -52,10 +54,19 @@
       
   }
 
+  
+  
+
+ 
+
   .icon {
       display: flex;
       justify-content: center;
       align-items: center;
+      
+    
+      
+
 
     width: 50px;
     height: 50px;
@@ -64,8 +75,15 @@
 
     border-radius: 0.25rem;
   }
+  
+  .icon:hover {
+      filter: brightness(85%);
+  }
+  
 
   button {
+
+    transition: width 0.5s;
 
       width: 5rem;
       height: 50px;
@@ -75,6 +93,31 @@
 
       background-color: var(--light-green);
   }
+
+  .menu.aberto ,button[class="aberto"] {
+
+    transition: width 0.5s;
+    
+    width: 20rem !important ;
+    align-items: flex-start;
+    
+
+  }
+
+  button.aberto {
+
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+    padding: 1.5rem;
+  }
+
+  
+
+  
   
 
 
@@ -99,6 +142,8 @@
       width: 40px;
       height: 40px;
       margin: 0.8rem 1.5rem;
+
+      
     }
 
 button {
