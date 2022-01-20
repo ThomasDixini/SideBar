@@ -1,4 +1,5 @@
 
+
 * {
     margin: 0;
     padding: 0;
@@ -58,10 +59,10 @@
       
   }
 
-  
-  
+  p {
+    padding: 1rem;
+  }
 
- 
 
   .icon {
       display: flex;
@@ -82,12 +83,12 @@
   }
   
   .icon:hover {
-    background-color: darken(var(--green));
-      filter: brightness(0.9);
+    background-color: var(--light-green);
+      
   }
 
   .icon.selected {
-    background-color: var(--light-grey);
+    background-color: var(--light-green);
   }
   
 
@@ -130,7 +131,7 @@
     max-width: 250px;
 
     margin: 1rem 2rem;
-    padding: 1rem;
+    padding: 1.5rem;
 
     justify-content: flex-start;
   }
