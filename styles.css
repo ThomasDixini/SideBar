@@ -21,6 +21,10 @@
       display: flex;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   /* HEADER ===============================================*/ 
 
   
@@ -78,7 +82,7 @@
   }
   
   .icon:hover {
-    background-color: var(--light-grey);
+    background-color: darken(var(--green));
       filter: brightness(0.9);
   }
 
