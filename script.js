@@ -39,10 +39,17 @@ function openMenu() {
 }
 
 function selectItem() {
+    
     DOM.icons.forEach(icon => {
-        icon.addEventListener('click',() => {
-            icon.classList.toggle('selected')
-        })
+        if(icon.id != 1 ){
+            icon.addEventListener('click',() => {
+                icon.classList.toggle('selected')
+                    if(icon.className.includes('aberto')){
+                    } else {
+                    openMenu();
+                    }
+                })
+        }
     })
 }
 
