@@ -1,5 +1,9 @@
 
 
+let user = [];
+
+const api = fetch('https://api.github.com/users/ThomasDixini').then(response => response.json()).then(json => user.push(json.avatar_url,json.name))
+console.log(user)
 
 const DOM = {
     menu: document.querySelector('.menu'),
@@ -8,6 +12,7 @@ const DOM = {
     paragraphs: document.querySelectorAll('p')
 }
 
+DOM.button.append(user[1])
 
 function openMenu() {
     DOM.menu.classList.toggle('aberto')
