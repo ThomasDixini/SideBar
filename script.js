@@ -6,8 +6,6 @@ const DOM = {
     button: document.querySelector('button'),
     icons: document.querySelectorAll('.icon'),
     paragraphs: document.querySelectorAll('p')
-
-
 }
 
 
@@ -16,11 +14,7 @@ function openMenu() {
     DOM.button.classList.toggle('aberto')
     DOM.icons.forEach(icon =>  {
 
-
         icon.classList.toggle('aberto')
-
-        
-
 
     })
     
@@ -43,4 +37,14 @@ function openMenu() {
 
     
 }
+
+function selectItem() {
+    DOM.icons.forEach(icon => {
+        icon.addEventListener('click',() => {
+            icon.classList.toggle('selected')
+        })
+    })
+}
+
+selectItem();
 
