@@ -124,7 +124,8 @@
 
 
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     align-items: center;
 
 
@@ -142,8 +143,18 @@
     padding: 1.5rem;
 
     justify-content: flex-start;
+    
   }
 
+
+  #avatar {
+    max-width: 3rem;
+    border-radius: 3rem;
+
+    box-shadow: 2px 2px 5px #00929c;
+   
+    
+  }
   
 
   
