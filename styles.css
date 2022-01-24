@@ -56,6 +56,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
+
       
   }
 
@@ -95,11 +97,25 @@
   .icon.selected {
     background-color: var(--light-green);
   }
+
+  .user {
+    display: flex;
+    align-items: center;
+
+    
+  
+
+  }
+
+  
   
 
   button {
 
     transition: 0.4s;
+
+      
+      
 
       width: 5rem;
       height: 50px;
@@ -128,6 +144,9 @@
     justify-content: space-between;
     align-items: center;
 
+    position: absolute;
+      z-index: -1;
+
 
     padding: 1.5rem;
   }
@@ -148,6 +167,9 @@
 
 
   #avatar {
+
+    margin: 0 1rem;
+
     max-width: 3rem;
     border-radius: 3rem;
 

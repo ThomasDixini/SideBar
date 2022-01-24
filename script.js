@@ -6,7 +6,11 @@ fetch('https://api.github.com/users/ThomasDixini')                              
 .then(data => {
                 const img = document.querySelector('#avatar')
                 img.setAttribute('src',data.avatar_url)
+
+                
                 })
+
+                
 
 
 
@@ -15,20 +19,19 @@ const DOM = {                                           // DOM, pega os elemento
     button: document.querySelector('button'),
     img_avatar: document.querySelector('#avatar'),
     icons: document.querySelectorAll('.icon'),
-    paragraphs: document.querySelectorAll('p')
+    paragraphs: document.querySelectorAll('p'),
+    user: document.querySelector('#username')
 }
 
 
 
-function openMenu() {                                   // Função que abre o menu //
+function openMenu(name) {                                   // Função que abre o menu //
     DOM.menu.classList.toggle('aberto')
     DOM.button.classList.toggle('aberto')               // → Muda as classes dos meus elementos do menu para aberto, fazendo assim abrir o menu
     DOM.icons.forEach(icon =>  {
         icon.classList.toggle('aberto')
     })
     
-    
-
     DOM.paragraphs.forEach(paragraph => {                // → Insere o texto de cada ícone quando o menu for aberto
 
         let hidden = "hidden"
@@ -36,15 +39,17 @@ function openMenu() {                                   // Função que abre o m
         if (paragraph.hasAttribute(hidden) == true){
             paragraph.removeAttribute(hidden)
             DOM.img_avatar.removeAttribute(hidden)
+            DOM.user.removeAttribute(hidden)
         } else {
             paragraph.setAttribute(hidden, true)
             DOM.img_avatar.setAttribute(hidden, true)
+            DOM.user.setAttribute(hidden, true)
         }
 
+    },
+    
         
-
-
-    })
+    )
 
     
 }
@@ -62,6 +67,19 @@ function selectItem() {                             // Função que deixa meu í
                 })
         }
     })
+}
+
+function insertUserName(name) {
+    if(DOM.menu.className !== 'menu aberto'){
+        const span = document.createElement('span');
+        span.innerHTML = name;
+        DOM.button.after(span)
+    } else {
+        DOM.button.removeChild('span')
+        
+        
+        
+    }
 }
 
 
